@@ -1,11 +1,13 @@
 import React from 'react';
 import { client } from '../../lib/client';
 import HeroBanner from '../../components/HeroBanner';
-import { FooterBanner, Product } from '../../components';
+import { FooterBanner, Product, LayoutStreet } from '../../components';
+import '../../styles/globals.css'
 
 const Street = ({ products, bannerData }) => {
   return (
     <>
+      <LayoutStreet>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       <div className='products-heading'>
         <h2>Latest Drop</h2>
@@ -16,6 +18,7 @@ const Street = ({ products, bannerData }) => {
       </div>
   
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      </LayoutStreet>
     </>
   );
 };
