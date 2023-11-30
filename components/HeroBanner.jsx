@@ -7,7 +7,7 @@ import Image from "next/image";
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
-      <Image
+      <img
         src={urlFor(heroBanner.image)}
         alt="avatar"
         className="hero-banner-image"
