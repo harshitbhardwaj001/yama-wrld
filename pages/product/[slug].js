@@ -9,6 +9,7 @@ import {
 import { Product } from "../../components";
 import { useState } from "react";
 import LayoutEmpty from "../../components/LayoutEmpty";
+import Image from "next/image";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
@@ -19,13 +20,14 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} alt=""  className="product-detail-image"/>
+            <Image src={urlFor(image && image[index])} alt="image"  className="product-detail-image"/>
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-                <img 
+                <Image 
                     src={urlFor(item)}
                     key={i}
+                    alt="image"
                     className={i === index ? 'small-image selected-image' : 'small-image'}
                     onMouseEnter={() => setIndex(i)}
                 />

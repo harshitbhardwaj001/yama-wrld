@@ -1,10 +1,10 @@
 import React from 'react'
-// import "../styles/globals.css"
 import Head from 'next/head';
 import card from "../assets/card3.png"
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Navbar from '../components/NavbarLight';
+import "../styles/globals.css"
 import "./home.css"
 import LayoutEmpty from '../components/LayoutEmpty';
 

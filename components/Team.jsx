@@ -60,22 +60,22 @@ const Team = () => {
         <div className='container'>
             <div className='icon'>
                 <div className="imgBx active" style={{"--i":1}} data-id="content1">
-                    <Image src={img1}/>
+                    <Image src={img1} alt="imgBx"/>
                 </div>
                 <div className="imgBx" style={{"--i":2}} data-id="content2">
-                    <Image src={img2}/>
+                    <Image src={img2} alt="imgBx"/>
                 </div>
                 <div className="imgBx" style={{"--i":3}} data-id="content3">
-                    <Image src={img3}/>
+                    <Image src={img3} alt="imgBx"/>
                 </div>
                 <div className="imgBx" style={{"--i":4}} data-id="content4">
-                    <Image src={img4}/>
+                    <Image src={img4} alt="imgBx"/>
                 </div>
                 <div className="imgBx" style={{"--i":5}} data-id="content5">
-                    <Image src={img5}/>
+                    <Image src={img5} alt="imgBx"/>
                 </div>
                 <div className="imgBx" style={{"--i":6}} data-id="content6">
-                    <Image src={img6}/>
+                    <Image src={img6} alt="imgBx"/>
                 </div>
                 {/* <div className="imgBx" style={{"--i":7}} data-id="content7">
                     <Image src={img3}/>
@@ -88,7 +88,7 @@ const Team = () => {
                 <div className="contentBx active" id="content1">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img1} />
+                            <Image src={img1} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Nosh<br /><span>Founder</span></h2>
@@ -103,7 +103,7 @@ const Team = () => {
                 <div className="contentBx" id="content2">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img2} />
+                            <Image src={img2} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Miss Ghost<br /><span>Community Manager</span></h2>
@@ -118,7 +118,7 @@ const Team = () => {
                 <div className="contentBx" id="content3">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img3} />
+                            <Image src={img3} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Kush<br /><span>Strategic Advisor</span></h2>
@@ -133,7 +133,7 @@ const Team = () => {
                 <div className="contentBx" id="content4">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img4} />
+                            <Image src={img4} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Kaffsu<br /><span>Illustrator</span></h2>
@@ -148,7 +148,7 @@ const Team = () => {
                 <div className="contentBx" id="content5">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img5} />
+                            <Image src={img5} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Ghost<br /><span>Security Moderator</span></h2>
@@ -163,7 +163,7 @@ const Team = () => {
                 <div className="contentBx" id="content6">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img6} />
+                            <Image src={img6} alt="imgBx" />
                         </div>
                         <div className="textBx">
                             <h2>Bruh<br /><span>Moderator</span></h2>
