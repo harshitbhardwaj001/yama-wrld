@@ -1,4 +1,3 @@
-import "./comp.css";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navLinks } from "../contants";
@@ -6,13 +5,14 @@ import logo from "../assets/logo.png";
 import menu from "../assets/menuB.svg";
 import close from "../assets/closeB.svg";
 import Image from "next/image";
+import "./comp.css";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`lg:px-9 sm:px-16 top w-full flex items-center py-5 fixed bg-transparent z-20`}
+      className={`lg:px-9 sm:px-[2rem] top w-full flex items-center py-5 fixed bg-[#FAF9F6] z-20`}
     >
       <div className="w-full flex justify-between items-center max-w-[85rem] mx-0">
         <Link
@@ -31,7 +31,7 @@ const Navbar = () => {
             style={{ width: "auto", height: "auto" }}
             className="ml-4"
           />
-          <p className="text-black text-[18px] font-extrabold cursor-pointer sm:block hidden">
+          <p className="text-black text-[18px] font-bold cursor-pointer sm:block hidden">
             Yama Wrld
           </p>
         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-[#C13440]" : "text-black"
-              } hover:text-[#C13440] text-[18px] font-bold cursor-pointer`}
+              } hover:text-[#C13440] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`/${link.id}`}>{link.title}</a>
@@ -52,10 +52,10 @@ const Navbar = () => {
           <Image
             src={toggle ? close : menu}
             alt="menu"
-            className="cursor-pointer mr-4 pr-4 font-black"
+            className="cursor-pointer mr-4 pr-4 fill-black"
             width={36}
             height={36}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "auto", height: "auto", fill: "black"}}
             onClick={() => setToggle(!toggle)}
           />
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
