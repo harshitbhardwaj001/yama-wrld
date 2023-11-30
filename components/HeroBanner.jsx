@@ -1,14 +1,11 @@
 import React from "react";
-import Link from "next/link";
+import "./comp.css"
 
 import { urlFor } from "../lib/client";
 
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
-      <div>
-        <p className="beats-solo">{heroBanner.smallText}</p>
-      </div>
       <img
         src={urlFor(heroBanner.image)}
         alt="avatar"

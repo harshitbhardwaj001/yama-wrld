@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from './NavbarStreet'
 import Footer from './Footer'
+import "./comp.css"
 
 const LayoutStreet = ({ children }) => {
   return (
@@ -12,7 +13,7 @@ const LayoutStreet = ({ children }) => {
       <header>
         <Navbar />
       </header>
-      <main className='main-container'>
+      <main className='main-container2'>
         {children}
       </main>
       <footer>

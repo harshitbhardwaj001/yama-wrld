@@ -1,8 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: 'Nullshock';
+  src: url('../public/fonts/nulshock.otf');
+}
 
 
 * {
@@ -12,6 +17,17 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+body {
+  background: #FAF9F6;
+  background-image: url('../assets/bg.jpg');
+  background-blend-mode: overlay;
+}
+
+
+h1, h2{
+  font-family: 'Nullshock';
 }
 
 .hash-span {
@@ -34,20 +50,20 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.red-gradient {
+  background: #EE3124;
+  background: linear-gradient(-90deg, #EE3124 0%, rgba(238, 49, 36, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    #EE3124 0%,
+    rgba(238, 49, 36, 0) 100%
   );
 }
 
-.green-pink-gradient {
+.green-blue-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #66FFCC 1.9%, #0080C6 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #66FFCC 1.9%, #0080C6 97.5%);
 }
 
 .orange-text-gradient {

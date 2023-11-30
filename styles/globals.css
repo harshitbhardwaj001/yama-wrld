@@ -4,6 +4,12 @@
   src: url('../public/fonts/CRENZO.otf');
 }
 
+@font-face {
+  font-family: 'Nullshock';
+  src: url('../public/fonts/nulshock.otf');
+}
+
+
 html,
 body, * {
   padding: 0;
@@ -13,7 +19,7 @@ body, * {
   box-sizing: border-box;
 }
 h1{
-  font-family: Crenzo;
+  font-family: Nullshock;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -28,10 +34,18 @@ a {
 max-width: 1400px; 
 margin: auto;
 width: 100%;
-
 }
+
+.main-container2{
+max-width: 1400px; 
+margin: auto;
+margin-top: 80px;
+width: 100%;
+}
+
 .layout{
   padding: 10px;
+  width: 100%;
 }
 
 .navbar-container{
@@ -92,6 +106,7 @@ width: 100%;
 .cart-item-qty{
   position: absolute;
   right: -8px;
+  top: 12px;
   font-size: 12px;
   color: #eee;
   background-color: #f02d34;
@@ -102,7 +117,7 @@ width: 100%;
   font-weight: 600;
 
 }
-.products-container{
+.product-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -123,17 +138,49 @@ width: 100%;
 .product-image{
   border-radius: 15px;
  background-color: #ebebeb;
+ height: 250px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+}
+
+.job-image{
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 20px 20px;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.job-image:hover{
+  border: 0px;
+  background-color: #C13440;
+  color: #ebebeb;
 }
 
 .product-name{
   font-weight: 500;
 }
+
+.job-name{
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .product-price{
   font-weight: 800;
   margin-top: 6px;
   color: black;
+}
+
+.job-desc{
+  font-weight: 500;
+  margin-left: 2px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 6px;
 }
 
 .hero-banner-container{
@@ -141,6 +188,7 @@ width: 100%;
   background-color: #0080C6;
   border-radius: 15px;
   position: relative;
+  z-index: -10;
   height: 500px;
   line-height: 0.9; 
   width: 100%;
@@ -346,9 +394,16 @@ text-align: end;
 .cancel{
   cursor: pointer;
 }
-.product-container{
+.products-container{
   margin-top: 15px;
   overflow: auto;
+max-height: 70vh;
+padding: 20px 10px;
+}
+.jobs-container{
+  margin-top: 15px;
+  overflow: none;
+  width: 20rem;
 max-height: 70vh;
 padding: 20px 10px;
 }

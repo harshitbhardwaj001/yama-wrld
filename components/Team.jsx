@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import img1 from "../assets/team/1.jpeg";
-import img2 from "../assets/team/2.jpeg";
-import img3 from "../assets/team/3.jpeg";
-import img4 from "../assets/team/4.jpeg";
-import "./index1.css"
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import "./team.css"
 
 const team = () => {
     useEffect(() => {
@@ -70,17 +72,17 @@ const team = () => {
                     <Image src={img4}/>
                 </div>
                 <div className="imgBx" style={{"--i":5}} data-id="content5">
-                    <Image src={img1}/>
+                    <Image src={img5}/>
                 </div>
                 <div className="imgBx" style={{"--i":6}} data-id="content6">
-                    <Image src={img2}/>
+                    <Image src={img6}/>
                 </div>
-                <div className="imgBx" style={{"--i":7}} data-id="content7">
+                {/* <div className="imgBx" style={{"--i":7}} data-id="content7">
                     <Image src={img3}/>
                 </div>
                 <div className="imgBx" style={{"--i":8}} data-id="content8">
                     <Image src={img4}/>
-                </div>
+                </div> */}
             </div>
             <div className="content">
                 <div className="contentBx active" id="content1">
@@ -89,7 +91,7 @@ const team = () => {
                             <Image src={img1} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Nosh<br /><span>Founder</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -104,7 +106,7 @@ const team = () => {
                             <Image src={img2} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Miss Ghost<br /><span>Community Manager</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -119,7 +121,7 @@ const team = () => {
                             <Image src={img3} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Kush<br /><span>Strategic Advisor</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -134,7 +136,7 @@ const team = () => {
                             <Image src={img4} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Kaffsu<br /><span>Illustrator</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -146,10 +148,10 @@ const team = () => {
                 <div className="contentBx" id="content5">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img1} />
+                            <Image src={img5} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Ghost<br /><span>Security Moderator</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -161,10 +163,10 @@ const team = () => {
                 <div className="contentBx" id="content6">
                     <div className="card">
                         <div className="imgBx1">
-                            <Image src={img2} />
+                            <Image src={img6} />
                         </div>
                         <div className="textBx">
-                            <h2>Nosher Puri<br /><span>Founder</span></h2>
+                            <h2>Bruh<br /><span>Moderator</span></h2>
                             <ul className='sci'>
                                 <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
@@ -173,7 +175,7 @@ const team = () => {
                         </div>
                     </div>
                 </div>
-                <div className="contentBx" id="content7">
+                {/* <div className="contentBx" id="content7">
                     <div className="card">
                         <div className="imgBx1">
                             <Image src={img3} />
@@ -202,7 +204,7 @@ const team = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

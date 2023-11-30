@@ -1,8 +1,6 @@
 import "./comp.css";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
-import { styles } from "../styles/style";
 import { navLinks } from "../contants";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.svg";
@@ -14,9 +12,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`sm:px-16 px-6 top w-full flex items-center py-5 fixed bg-primary z-20`}
+      className={`lg:px-9 sm:px-16 top w-full flex items-center py-5 fixed bg-transparent z-20`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-[85rem] mx-0">
         <Link
           href="/"
           className="flex items-center gap-2"
@@ -33,7 +31,7 @@ const Navbar = () => {
             style={{ width: "auto", height: "auto" }}
             className="ml-4"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer sm:block hidden">
+          <p className="text-black text-[18px] font-bold cursor-pointer sm:block hidden">
             Yama Wrld
           </p>
         </Link>
@@ -42,8 +40,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? "text-[#C13440]" : "text-black"
+              } hover:text-[#C13440] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`/${link.id}`}>{link.title}</a>
@@ -54,7 +52,7 @@ const Navbar = () => {
           <Image
             src={toggle ? close : menu}
             alt="menu"
-            className="cursor-pointer mr-4"
+            className="cursor-pointer mr-4 font-black"
             width={36}
             height={36}
             style={{ width: "auto", height: "auto" }}

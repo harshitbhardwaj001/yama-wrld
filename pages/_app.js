@@ -1,13 +1,11 @@
 import React from 'react'
+// import './index.css'
 
-import { LayoutStreet } from '../components'
 
 function MyApp({ Component, pageProps }) {
   return (
     // <LayoutStreet>
-    <>
     <Component {...pageProps} />
-    </>
     /* </LayoutStreet> */
   )
 }

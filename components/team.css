@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +9,26 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* @font-face {
+    font-family: 'Nullshock';
+    src: url('../public/fonts/nulshock.otf');
+  }
+
+h1, h2{
+    font-family: 'Nullshock';
+  }
+  
+  h1 span{
+    font-family: 'Nullshock';
+  } */
+
 body {
     background: #060917;
 }
 
 .main {
     display: flex;
+    flex-direction: row;
     gap: 10rem;
     justify-content: center;
     align-items: center;
@@ -26,7 +41,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: -100;
 }
 
 .meet h1 {
@@ -48,6 +63,17 @@ body {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .container {
+        top: 80px;
+    }
+}
+
 .container .icon {
     position: relative;
     left: -50%;
@@ -67,11 +93,13 @@ body {
     transition: 0.5s;
     border: 1px solid #fff;
     box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
-    transform: rotate(calc(360deg/8 * var(--i)));
+    transform: rotate(calc(360deg/6 * var(--i)));
     transform-origin: 340px;
     z-index: 10;
     overflow: hidden;
 }
+
+
 
 .container .icon .imgBx.active {
     box-shadow: 0 0 0 6px #222, 0 0 0 12px #EE3124;
@@ -85,7 +113,7 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    transform: rotate(calc(-360deg/8 * var(--i)));
+    transform: rotate(calc(-360deg/6 * var(--i)));
     transition: 0.5s;
     filter: grayscale(1);
 }
@@ -198,16 +226,17 @@ body {
 
 .contentBx .card .textBx h2 {
     position: relative;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: #fff;
-    line-height: 1em;
+    letter-spacing: 0.1em;
+    line-height: 0.8em;
     text-transform: uppercase;
     text-align: center;
 }
 
 .contentBx .card .textBx h2 span {
-    font-size: 0.65em;
+    font-size: 0.5em;
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -240,4 +269,79 @@ body {
 
 .contentBx .card .textBx .sci li a:hover {
     background: #0080C6;
+}
+
+@media screen and (max-width: 750px) {
+
+    .container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .container .icon .imgBx{
+        transform-origin: 230px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .contentBx .card .imgBx1 {
+        width: 100px;
+        height: 100px;
+    }
+    .content{
+        inset: -20px;
+    }
+    .content::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .meet h1 {
+        font-size: 3rem;
+    }
+    .container {
+        width: 320px;
+        height: 320px;
+    }
+
+    .container .icon .imgBx{
+        width: 60px;
+        height: 60px;
+        transform-origin: 200px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .meet h1 {
+        font-size: 2rem;
+    }
+    .container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .contentBx .card .imgBx1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container .icon .imgBx{
+        transform-origin: 170px;
+    }
+    .content::before{
+        display: none;
+    }
+    .contentBx .card .textBx h2 {
+        font-size: 1.4rem;
+    }
+    .contentBx .card .textBx h2 span {
+        font-size: 0.4em;
+    }
+    .contentBx .card .textBx .sci {
+        margin-top: 5px;
+    }
+    .contentBx .card .textBx .sci li a{
+        width: 25px;
+        height: 25px;
+    }
 }
