@@ -8,11 +8,13 @@ import {
 } from "react-icons/ai";
 import { Product } from "../../components";
 import { useState } from "react";
+import LayoutEmpty from "../../components/LayoutEmpty";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   return (
+    <LayoutEmpty>
     <div>
       <div className="product-detail-container">
         <div>
@@ -79,6 +81,7 @@ const ProductDetails = ({ product, products }) => {
         </div>
       </div>
     </div>
+    </LayoutEmpty>
   );
 };
 

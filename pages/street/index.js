@@ -7,11 +7,11 @@ import { FooterBanner, Product, LayoutStreet } from "../../components";
 import "../../styles/globals.css";
 import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
+import LayoutEmpty from "../../components/LayoutEmpty";
 
 const Street = ({ products, bannerData }) => {
   const { scrollY } = useScroll();
   return (
-    <>
       <LayoutStreet>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
         <div className="my-[60px] mt-[11rem] mx-auto">
@@ -73,7 +73,6 @@ const Street = ({ products, bannerData }) => {
   
       <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
       </LayoutStreet>
-    </>
   );
 };
 

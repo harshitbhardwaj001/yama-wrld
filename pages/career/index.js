@@ -4,18 +4,19 @@ import Jobs from '../../components/Jobs'
 import Layout from '../../components/Layout'
 import { client } from '../../lib/client'
 import Head from 'next/head'
+import LayoutEmpty from '../../components/LayoutEmpty'
 // import '../../styles/globals.css'
 
 const index = ({ jobListings }) => {
   return (
-    <>
-    <Head>
+    
+    <Layout>
+      <Head>
         <title>Careers - Yama Wrld</title>
       </Head>
-    <Layout>
       <Jobs JobListings={jobListings}/>
     </Layout>
-    </>
+    
   )
 }
 

@@ -11,7 +11,12 @@
 
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../../sanity.config'
+import Layout from '../../../../components/Layout'
 
 export default function StudioPage() {
-  return <NextStudio config={config} />
+  return (
+    <Layout>
+  <NextStudio config={config} />
+  </Layout>
+  )
 }

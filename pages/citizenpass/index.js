@@ -6,10 +6,12 @@ import About from '../../components/About.jsx';
 import Steps from '../../components/Steps';
 import Footer from '../../components/FooterC';
 import "./citizen.css";
+import LayoutEmpty from '../../components/LayoutEmpty.jsx';
 
 
 const CitizenPass = () => {
   return (
+    <LayoutEmpty>
     <div className='relative z-0 bg-primary'>
       <Head>
         <title>Citizen Pass - Yama Wrld</title>
@@ -26,6 +28,7 @@ const CitizenPass = () => {
       <Footer />
       </div>
     </div>
+    </LayoutEmpty>
   )
 }
 

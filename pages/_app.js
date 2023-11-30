@@ -1,12 +1,13 @@
 import React from 'react'
+import LayoutEmpty from '../components/LayoutEmpty'
 // import './index.css'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    // <LayoutStreet>
+    // <LayoutEmpty>
     <Component {...pageProps} />
-    /* </LayoutStreet> */
+    /* </LayoutEmpty> */
   )
 }
 

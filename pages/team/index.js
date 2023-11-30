@@ -2,10 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar'
 import Team from "../../components/Team"
 import Footer from '../../components/FooterC'
+import LayoutEmpty from '../../components/LayoutEmpty'
 // import "./teams.css"
 
 const index = () => {
   return (
+    <LayoutEmpty>
     <div>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
             <Navbar />
@@ -15,6 +17,7 @@ const index = () => {
             <Footer />
         </div>
     </div>
+    </LayoutEmpty>
   )
 }
 

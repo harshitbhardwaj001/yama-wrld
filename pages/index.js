@@ -6,10 +6,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Navbar from '../components/NavbarLight';
 import "./home.css"
+import LayoutEmpty from '../components/LayoutEmpty';
 
 const Home = () => {
   return(
-    <>
+    <LayoutEmpty>
     <Head>
       <title>Yama Wrld</title>
     </Head>
@@ -46,7 +47,7 @@ const Home = () => {
     </motion.div>
       
     {/* </Layout> */}
-    </>
+    </LayoutEmpty>
   )
 }
 
