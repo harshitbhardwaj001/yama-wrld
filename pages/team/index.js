@@ -9,8 +9,8 @@ const index = () => {
   return (
     <LayoutEmpty>
     <div>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-            <Navbar />
+        <div>
+          <Navbar />
         </div>
         <Team />
         <div className='relative z-0'>

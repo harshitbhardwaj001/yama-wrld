@@ -5,8 +5,8 @@ import Hero from '../../components/Hero';
 import About from '../../components/About.jsx';
 import Steps from '../../components/Steps';
 import Footer from '../../components/FooterC';
-import "./citizen.css";
 import LayoutEmpty from '../../components/LayoutEmpty.jsx';
+import "./citizen.css";
 
 
 const CitizenPass = () => {
