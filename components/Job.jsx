@@ -11,7 +11,7 @@ const Job = ({ product: { jobId, title, location, type} }) => {
         <div className="flex flex-row product-card job-image">
           <div className="flex flex-col">
           <p className="job-name">{title}</p>
-          <p className="job-desc">{location} // {type}</p>
+          <p className="job-desc">{location} {'//'} {type}</p>
           </div>
         </div>
       </Link>

@@ -51,7 +51,7 @@
             variants={fadeIn("", "", 0.1, 1)}
             className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-            The Citizen Pass is Yama's Genesis NFT collection onboarding the earliest supporters of the brand. Each Citizen Pass can be claimed for free by those holding the Citizen role in our Discord.
+            The Citizen Pass is Yama&apos;s Genesis NFT collection onboarding the earliest supporters of the brand. Each Citizen Pass can be claimed for free by those holding the Citizen role in our Discord.
         </motion.p>
 
         <motion.div 

@@ -15,12 +15,12 @@ const Job = ({ job }) => {
       <div className='flex w-full'>
         <div className='flex flex-col px-5 w-[40rem]'>
           <h1 className='text-[1.5rem] container pt-[8rem] text-black'>{title}</h1>
-          <p className='text-[#6B7381] text-[0.8rem] ml-[2px]'>{location} // {type}</p>
+          <p className='text-[#6B7381] text-[0.8rem] ml-[2px]'>{location} {'//'} {type}</p>
           <p className='text-[1rem] container pt-[1rem] text-black'>{description}</p>
           <h2 className='text-[1.2rem] font-black text-black mt-[20px]'>Responsibilities :</h2>
-          {responsibility.map((res, i) => i+1 !== responsibility.length?<p className='text-[1rem] container pt-[1rem] text-black list-item list-disc'>{res}</p>:"")}
+          {responsibility.map((res, i) => i+1 !== responsibility.length?<p key={i} className='text-[1rem] container pt-[1rem] text-black list-item list-disc'>{res}</p>:"")}
           <h2 className='text-[1.2rem] font-black text-black mt-[20px]'>Requirements :</h2>
-          {requirement.map((res, i) => i+1 !== requirement.length?<p className='text-[1rem] container pt-[1rem] text-black list-item list-disc'>{res}</p>:"")}
+          {requirement.map((res, i) => i+1 !== requirement.length?<p key={i} className='text-[1rem] container pt-[1rem] text-black list-item list-disc'>{res}</p>:"")}
         </div>
         <div className='text-black pt-[8rem] right-[20rem] fixed'>
           <div className="select-none hidden md:block fixed right-5 bottom-5 bg-[#000] text-white w-[550px] rounded-md p-5">

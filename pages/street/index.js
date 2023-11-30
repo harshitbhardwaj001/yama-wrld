@@ -51,7 +51,7 @@ const Street = ({ products, bannerData }) => {
             
             <div className="absolute z-100 lg:w-[28rem] lg:left-[8.5rem] lg:top-[7.5rem] md:w-[20rem] md:top-[5.5rem] md:left-[6rem] sm:w-[12rem] sm:top-[2.8rem] sm:left-[3.8rem] xs:w-[8rem] xs:top-[1.5rem] xs:left-[2.5rem]">
               <h1 className="text-white font-black text-center lg:text-[1.7rem] md:text-[1.2rem] sm:text-[.8rem] xs:text-[.5rem]">
-                Get in loser, we're going shopping. Yama Street is coming soon!
+                Get in loser, we&apos;re going shopping. Yama Street is coming soon!
               </h1>
             </div>
           </motion.div>

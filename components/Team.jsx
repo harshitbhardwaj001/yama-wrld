@@ -9,7 +9,7 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 import "./team.css"
 
-const team = () => {
+const Team = () => {
     useEffect(() => {
         let imgBx = document.querySelectorAll('.imgBx');
         let contentBx = document.querySelectorAll('.contentBx');
@@ -213,4 +213,4 @@ const team = () => {
   )
 }
 
-export default team
+export default Team
