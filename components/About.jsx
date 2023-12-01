@@ -43,13 +43,15 @@
         <span className='hash-span' id="about">
           &nbsp;
         </span>
-            <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">What is a</p>
-            <h2 className="text-[#EE3124] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Citizen Pass?</h2>
+            <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider lg:text-left md:text-left sm:text-left xs:text-center">What is a</p>
+            <h2 className='text-[#EE3124] font-black md:text-[60px] sm:text-[50px] xs:text-[38px] text-[30px] lg:text-left md:text-left sm:text-left  xs:text-center'>
+                Citizen Pass?
+            </h2>
         </motion.div>
 
         <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] lg:text-left md:text-left sm:text-left xs:text-center'
         >
             The Citizen Pass is Yama&apos;s Genesis NFT collection onboarding the earliest supporters of the brand. Each Citizen Pass can be claimed for free by those holding the Citizen role in our Discord.
         </motion.p>
@@ -64,7 +66,7 @@
             <Image src={zoya} alt="zoya" width={500} />
         </motion.div>
 
-        <div className='mt-20 flex flex-wrap gap-10'>
+        <div className='mt-20 flex flex-wrap gap-10 xs:justify-center'>
             {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
             ))}

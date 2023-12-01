@@ -124,7 +124,7 @@ import {
   
   const experiences = [
     {
-      title: "Where it all began?",
+      title: "Where it all began",
       company_name: "April, 2023",
       // icon: starbucks,
       // iconBg: "#383E56",
