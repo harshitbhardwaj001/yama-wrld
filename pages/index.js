@@ -35,7 +35,7 @@ const Home = () => {
           },
         }}
       >
-        <div className="lg:mt-[100px] md:mt-[140px] sm:mt-[200px] xs:mt-[260px]">
+        <div className="lg:mt-[100px] md:mt-[140px] sm:mt-[200px] xs:mt-[160px]">
           <h2 className="lg:text-[2rem] md:text-[1.5rem] sm:text-[1.2rem] xs:text-[1rem] text-[#FFE075] relative z-100 lg:top-[9rem] md:top-[8rem] sm:top-[5.5rem] xs:top-[4.2rem] text-center tracking-widest">
             <span className="text-[#FFE075]">&#9888;</span> Something&apos;s
             Cooking <span className="text-[#FFE075]">&#9888;</span>
