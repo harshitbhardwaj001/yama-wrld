@@ -27,8 +27,12 @@ import {
   
   export const navLinks = [
     {
-      id: "citizenpass",
+      id: "",
       title: "Citizen Pass",
+    },
+    {
+      id: "map",
+      title: "Yama Map",
     },
     {
       id: "street",

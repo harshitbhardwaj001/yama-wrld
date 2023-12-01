@@ -10,7 +10,6 @@
 }
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -21,22 +20,21 @@
 }
 
 body {
-  background: #050816;
+  background: #FAF9F6;
+  background-image: url('../../assets/bg.jpg');
+  overflow: hidden;
+  background-blend-mode: overlay;
 }
 
-
-.hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
-  display: block;
-}
 
 h1, h2{
   font-family: 'Nullshock';
 }
 
-h1 span{
-  font-family: 'Nullshock';
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
 }
 
 .black-gradient {
