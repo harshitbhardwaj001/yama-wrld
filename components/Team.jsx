@@ -93,9 +93,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Nosh<br /><span>Founder</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/0xnosh" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,9 +106,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Miss Ghost<br /><span>Community Manager</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/Miss_Ghost_2022" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,9 +119,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Kush<br /><span>Strategic Advisor</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/SquareKush" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -138,9 +132,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Kaffsu<br /><span>Illustrator</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/Kaffsu" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -153,9 +145,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Ghost<br /><span>Security Moderator</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/Ghost_Rezin" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -168,9 +158,7 @@ const Team = () => {
                         <div className="textBx">
                             <h2>Bruh<br /><span>Moderator</span></h2>
                             <ul className='sci'>
-                                <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/fullmetalbruh" target="_blank"><i className="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#EE3124]' />
             <div className='w-1 sm:h-80 h-40 red-gradient' />
         </div>
-        <div>
+        <div className='lg:w-[70rem]'>
           <h1 className={'font-black text-white lg:text-[74px] sm:text-[54px] xs:text-[44px] text-[40px] lg:leading-[98px] mt-2'}>Get Your <span className='text-[#EE3124]'>Citizen Pass</span></h1>
           <p className='font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100'>
           Citizen Passes are a limited supply collectible available to early adopters of Yama. They will live on the Ethereum Blockchain as a unique non-fungible token.

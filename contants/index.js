@@ -127,7 +127,7 @@ import {
       // date: "March 2020 - April 2021",
       points: [
         "The Citizen Pass Program is launched publicly on Twitter relating to the lore of Yama.",
-        "Private Discord is launched!!",
+        "Private Discord is launched.",
         "Early supporters of our content are sent a DM inviting them to our Discord to claim a Citizen Role. 1 Citizen Role = 1 guaranteed Citizen Pass mint.",
       ],
     },
@@ -139,7 +139,7 @@ import {
       date: "Jan 2021 - Feb 2022",
       points: [
         "500 Citizens onboarded into our Discord.",
-        "Collaborations with blue-chip Web3 communities!!",
+        "Collaborations with blue-chip Web3 communities.",
         "AMAs and Twitter Spaces.",
       ],
     },
@@ -152,7 +152,7 @@ import {
       points: [
         "Mint will take place during December '23 or January '24",
         "Max supply: 500",
-        "Mint price: Free Mint for Citizen Role holders in Yamas Discord",
+        "Mint price: Free Mint for Citizen Role holders in the Yama Discord",
         "Users pay for Ethereum gas fees while minting their NFT",
       ],
     },
