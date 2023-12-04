@@ -32,7 +32,7 @@ import {
     },
     {
       id: "map",
-      title: "Yama Map",
+      title: "Mandala",
     },
     {
       id: "street",

@@ -16,7 +16,7 @@ const Street = ({ products, bannerData }) => {
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
         <div className="my-[60px] mt-[11rem] mx-auto">
           <motion.div
-            className="relative z-100 lg:top-[2rem] lg:ml-[2rem] md:top-[-5rem] md:ml-[2rem] sm:top-[-5rem] sm:ml-[5rem]"
+            className="relative z-100 lg:top-[2rem] lg:ml-[2rem] md:top-[-5rem] md:ml-[2rem] sm:top-[-5rem] sm:ml-[5rem] message"
             initial="hidden"
             whileInView="visible"
             variants={{
@@ -40,7 +40,7 @@ const Street = ({ products, bannerData }) => {
             }}
             viewport={{ once: true }}
           >
-          <div className="relative z-99 ">
+          <div className="relative z-99">
           <Image
               src={message}
               alt="message"
@@ -49,7 +49,7 @@ const Street = ({ products, bannerData }) => {
             />
           </div>
             
-            <div className="absolute z-100 lg:w-[30rem] lg:left-[7.5rem] lg:top-[8.5rem] md:w-[20rem] md:top-[5.5rem] md:left-[6rem] sm:w-[12rem] sm:top-[2.8rem] sm:left-[3.8rem] xs:w-[8rem] xs:top-[1.5rem] xs:left-[2.5rem]">
+            <div className="absolute z-100 lg:w-[30rem] lg:left-[7.5rem] lg:top-[8.5rem] md:w-[20rem] md:top-[5.5rem] md:left-[6rem] sm:w-[12rem] sm:top-[2.8rem] sm:left-[3.8rem] xs:w-[8rem] xs:top-[1.2rem] xs:left-[2.5rem]">
               <h1 className="text-white font-bold text-center lg:text-[1.3rem] md:text-[1.2rem] sm:text-[.8rem] xs:text-[.5rem]">
                 Get in loser, we&apos;re going shopping. Yama Street is <br /> coming soon!
               </h1>
