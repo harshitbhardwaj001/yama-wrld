@@ -43,7 +43,7 @@ import {
       title: "Team",
     },
     {
-      id: "career",
+      id: "careers",
       title: "Career",
     },
   ];
