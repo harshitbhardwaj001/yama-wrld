@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navLinks } from "../contants";
 import logo from "../assets/logo.png";
-import menu from "../assets/menuB.svg";
-import close from "../assets/closeB.svg";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -12,9 +12,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`lg:px-9 sm:px-16 top w-full flex items-center py-5 fixed bg-transparent z-20`}
+      className={`sm:px-16 px-6 top w-full flex items-center py-5 fixed bg-[#FAF9F6] z-20`}
     >
-      <div className="w-full flex justify-between items-center max-w-[85rem] mx-0">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           href="/"
           className="flex items-center gap-2"
@@ -31,7 +31,7 @@ const Navbar = () => {
             style={{ width: "auto", height: "auto" }}
             className="ml-4"
           />
-          <p className="text-black text-[18px] font-extrabold cursor-pointer sm:block hidden">
+          <p className="Yama text-black text-[18px] font-bold cursor-pointer sm:block hidden">
             Yama Wrld
           </p>
         </Link>
@@ -40,11 +40,11 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-[#C13440]" : "text-black"
-              } hover:text-[#C13440] text-[18px] font-bold cursor-pointer`}
+                active === link.title ? "text-white" : "text-black"
+              } hover:text-[#C13440] text-[18px] font-medium cursor-pointer `}
               onClick={() => setActive(link.title)}
             >
-              <a href={`/${link.id}`}>{link.title}</a>
+              <a href={`/${link.id}`} className="menuitem">{link.title}</a>
             </li>
           ))}
         </ul>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Image
             src={toggle ? close : menu}
             alt="menu"
-            className="cursor-pointer mr-4 pr-4 font-black"
+            className="cursor-pointer mr-4"
             width={36}
             height={36}
             style={{ width: "auto", height: "auto" }}

@@ -86,7 +86,7 @@ const Loader = () => {
     <div className="loader fixed w-[100vw] h-[100vh] bg-[#000]">
         <h1 className="counter w-full h-full fixed flex justify-end items-end text-[#505050] px-[2rem] py-[4rem] text-[7vw] italic z-1000">0</h1>
         <div className="site-teaser">
-            <span className="absolute top-0 right-10 text-[#505050] text-[2rem] italic">Entering Yama Wrld</span>
+            <span className="xl:absolute lg:absolute md:flex md:justify-center sm:flex sm:justify-center xs:flex xs:justify-center  top-0 right-10 text-[#505050] text-[2rem] italic">Entering Yama Wrld</span>
         </div>
         <div className="circles absolute left-[5rem] bottom-[5rem] w-[400px] h-[400px] rounded-[100%]">
             <div className="circle circle-outer absolute top-0 left-0 w-full  h-full border-[1px] border-[#505050] rounded-[100%]"></div>

@@ -5,12 +5,11 @@ import rickshaw from "../../assets/Rickshaw.png";
 import message from "../../assets/text.svg";
 import { FooterBanner, Product, LayoutStreet } from "../../components";
 import "../../styles/globals.css";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import LayoutEmpty from "../../components/LayoutEmpty";
 
 const Street = ({ products, bannerData }) => {
-  const { scrollY } = useScroll();
+  // const { scrollY } = useScroll();
   return (
       <LayoutStreet>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />

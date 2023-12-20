@@ -14,6 +14,19 @@
   color-scheme: dark;
 }
 
+@font-face {
+  font-family: 'Nullshock';
+  src: url('../public/fonts/nulshock.otf');
+}
+
+.Yama {
+  font-family: "poppins";
+}
+
+.menuitem {
+  font-family: "poppins";
+}
+
 .blackFill {
   fill: black;
 }

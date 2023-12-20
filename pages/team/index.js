@@ -9,7 +9,7 @@ const index = () => {
   return (
     <LayoutEmpty>
     <div>
-        <div>
+        <div className='ml-[-1px]'>
           <Navbar />
         </div>
         <Team />

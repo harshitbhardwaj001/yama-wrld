@@ -33,7 +33,7 @@ const Navbar = () => {
             style={{ width: "auto", height: "auto" }}
             className="ml-4"
           />
-          <p className="text-white text-[18px] font-extrabold cursor-pointer sm:block hidden">
+          <p className="text-white text-[18px] font-bold cursor-pointer sm:block hidden">
             Yama Wrld
           </p>
         </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-bold cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`/${link.id}`}>{link.title}</a>

@@ -5,7 +5,7 @@ import FooterC from './Footer'
 const Layout = ({ children }) => {
   return (
     <div className='layout'>
-      <header>
+      <header  className='mt-[-10px] ml-[-20px]'>
         <Navbar />
       </header>
       <main className='main-container'>

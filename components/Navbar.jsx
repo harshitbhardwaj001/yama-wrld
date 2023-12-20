@@ -1,8 +1,6 @@
 import "./comp.css";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
-import { styles } from "../styles/style";
 import { navLinks } from "../contants";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.svg";
