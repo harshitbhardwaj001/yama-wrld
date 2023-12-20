@@ -297,6 +297,11 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+    .main {
+        position: relative;
+        z-index: -5;
+        top: -80px;
+    }
     .meet h1 {
         font-size: 3rem;
     }

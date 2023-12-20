@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navLinks } from "../contants";
 import logo from "../assets/logo.png";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
+import menu from "../assets/menuB.svg";
+import close from "../assets/closeB.svg";
 import Image from "next/image";
 
 const Navbar = () => {

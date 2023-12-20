@@ -73,6 +73,7 @@ const Popup = (props) => {
         console.error(error);
         // Handle error, e.g., show an error message
       });
+      props.setTrigger(false);
   }
   return props.trigger ? (
     <div>
