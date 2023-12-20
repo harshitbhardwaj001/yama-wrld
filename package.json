@@ -19,6 +19,7 @@
     "@sanity/client": "^6.8.6",
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.25.0",
+    "axios": "^1.6.2",
     "canvas-confetti": "^1.5.1",
     "framer-motion": "^6.5.1",
     "gsap": "^3.12.3",

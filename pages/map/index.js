@@ -61,7 +61,7 @@ const Home = () => {
           </p>
         </div>
       </motion.div>
-      {/* <Popup trigger={bPopup} setTrigger={setBpopup} /> */}
+      <Popup trigger={bPopup} setTrigger={setBpopup} />
 
       {/* </Layout> */}
     </LayoutEmpty>
