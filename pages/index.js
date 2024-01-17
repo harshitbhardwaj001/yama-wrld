@@ -52,7 +52,7 @@ const CitizenPass = () => {
       });
 
       // Set the cookie to indicate that the user has visited the page
-      Cookies.set("visitedCitizenPassPage", "true", { expires: 1 }); // Expires in 7 days
+      Cookies.set("visitedCitizenPassPage", "true", { expires: 1 / 48 }); // Expires in 7 days
     }
   }, []);
   return (
