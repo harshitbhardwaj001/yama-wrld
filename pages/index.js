@@ -10,6 +10,7 @@ import "./citizen.css";
 import Loader from "../components/Loader.jsx";
 import gsap from "gsap";
 import Cookies from "js-cookie";
+import LoaderNew from "../components/LoaderNew.jsx";
 
 const CitizenPass = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -18,36 +19,36 @@ const CitizenPass = () => {
 
     if (!hasVisitedBefore) {
       setIsLoading(true);
-      gsap.fromTo(
-        ".main",
-        {
-          duration: 2,
-          left: "100%",
-          visibility: "visible",
-          scale: 0.5,
-          ease: "power2.inOut",
-          delay: 4,
-        },
-        {
-          duration: 2,
-          left: "50%",
-          scale: 0.5,
-          transform: "translateX(-50%)",
-          ease: "power4.inOut",
-          delay: 4,
-        }
-      );
+      // gsap.fromTo(
+      //   ".main",
+      //   {
+      //     duration: 2,
+      //     left: "100%",
+      //     visibility: "visible",
+      //     scale: 0.5,
+      //     ease: "power2.inOut",
+      //     delay: 4,
+      //   },
+      //   {
+      //     duration: 2,
+      //     left: "50%",
+      //     scale: 0.5,
+      //     transform: "translateX(-50%)",
+      //     ease: "power4.inOut",
+      //     delay: 4,
+      //   }
+      // );
 
       gsap.to(".main", {
-        duration: 2,
-        scale: 1,
+        duration: 1,
+        visibility: "visible",
         ease: "power4.inOut",
-        delay: 7.5,
+        delay: 4.5,
       });
 
       gsap.to(".container2", {
         display: "block",
-        delay: 7.5,
+        delay: 4.5,
       });
 
       // Set the cookie to indicate that the user has visited the page
@@ -58,7 +59,7 @@ const CitizenPass = () => {
     <>
       {isLoading && (
         <div className="block overflow-hidden fixed h-full w-full">
-          <Loader />
+          <LoaderNew />
         </div>
       )}
       <div className="container1 relative z-0 overflow-hidden">
