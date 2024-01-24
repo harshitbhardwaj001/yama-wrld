@@ -6,7 +6,7 @@ import "../../styles/globals.css";
 import bunker from "../../assets/U.png";
 import shield from "../../assets/enforcer.png";
 import cardshield from "../../assets/ecard.png";
-import Utext from "../../assets/Utext.png";
+import Utext from "../../assets/UText.png";
 import swords from "../../assets/A.png";
 import controller from "../../assets/Y.png";
 import cocktail from "../../assets/R.png";

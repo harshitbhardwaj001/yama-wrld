@@ -4,7 +4,7 @@ import FooterC from "../components/FooterC";
 import "./citizenpass/citizen.css";
 import gsap from "gsap";
 import anime from "../assets/anime.png";
-import logo from "../assets/yamaLogo.png";
+import logo from "../assets/YamaLogo.png";
 import infra from "../assets/infra.png";
 import web3 from "../assets/web3.png";
 import runner from "../assets/runner.png";
