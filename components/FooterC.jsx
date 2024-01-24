@@ -15,24 +15,29 @@ const FooterC = () => {
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-white sm:mt-0">
           <li>
-            <a href="/" className="hover:underline me-4 md:me-6">
+            <Link href="/" className="hover:underline me-4 md:me-6">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/street" className="hover:underline me-4 md:me-6">
+            <Link href="/citizenpass" className="hover:underline me-4 md:me-6">
+              Citizen Pass
+            </Link>
+          </li>
+          <li>
+            <Link href="/street" className="hover:underline me-4 md:me-6">
               Yama-Street
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/team" className="hover:underline me-4 md:me-6">
+            <Link href="/team" className="hover:underline me-4 md:me-6">
               Team
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/careers" className="hover:underline">
+            <Link href="/careers" className="hover:underline">
               Career
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

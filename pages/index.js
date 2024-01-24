@@ -13,7 +13,7 @@ import Cookies from "js-cookie";
 import Image from "next/image";
 import LoaderNew from "../components/LoaderNew";
 
-const index = () => {
+const About = () => {
   const [clicked, setClicked] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -47,7 +47,7 @@ const index = () => {
       setClicked(true);
       setIsLoaded(true);
     }
-  }, [clicked]);
+  }, [clicked, hasVisitedBefore]);
   console.log(clicked);
   const handleClick = () => {
     setClicked(true);
@@ -226,4 +226,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;
