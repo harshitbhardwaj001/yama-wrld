@@ -101,14 +101,13 @@ const About = () => {
                 className="mr-[-2rem] mt-[15rem] xs:max-md:mt-[1rem] xs:max-md:mr-[-5rem] xs:max-md:w-[400px] z-[10]"
               />
             </div>
-            <div className="w-[94.5vw] h-[10vh] border-black border-[1px] border-l-0 border-r-0 ml-[2.2rem] xs:max-md:ml-[0.7rem] absolute mt-[-8rem] overflow-hidden">
+            <div className="w-[94.5vw] h-[10vh] xs:max-md:h-[7.5vh] border-black border-[1px] border-l-0 border-r-0 ml-[2.2rem] xs:max-md:ml-[0.7rem] absolute mt-[-8rem] overflow-hidden">
               <div className="w-[200vw] animate-marquee text-[2rem] mt-[0.8rem] text-black ">
                 YAMA STREET COMING SOON 🌏 कुछ आ रहा है 🌏 YAMA STREET COMING
-                SOON 🌏 कुछ आ रहा है 🌏 YAMA STREET COMING SOON 🌏 कुछ आ रहा है
-                🌏 YAMA STREET COMING SOON 🌏 कुछ आ रहा है
+                SOON 🌏 कुछ आ रहा है 🌏
               </div>
             </div>
-            <div className="w-[40vw] h-[7vh] flex gap-0 mt-[5rem] items-center justify-center mb-[0.55rem] xs:max-md:mb-[0.2rem] ml-[1.9rem] xs:max-md:ml-[5.2rem]">
+            <div className="w-[40vw] h-[7vh] flex gap-0 mt-[5rem] items-center justify-center mb-[0.55rem] xs:max-md:mb-[-0.3rem] ml-[1.9rem] xs:max-md:ml-[4.9rem]">
               <div
                 className={`px-[2.7rem] py-[1rem] xs:max-md:px-[1.5rem] text-black text-[1.3rem] border-[2px] border-b-[0px] rounded-t-xl ${
                   slide === 1 ? "bg-[#0080C6] border-[#0080C6]" : "border-black"
@@ -167,10 +166,10 @@ const About = () => {
             <div
               className={`w-[95vw] h-[80vh] ${
                 slide === 1
-                  ? "bg-[#0080C6] bg-1-bg bg-top bg-cover bg-opacity-10 bg-no-repeat"
+                  ? "bg-[#0080C6] bg-1-bg bg-top bg-cover bg-opacity-10 bg-no-repeat xs:max-md:bg-left"
                   : slide === 2
-                  ? "bg-[#FFE075] bg-2-bg bg-top bg-cover bg-opacity-10 bg-no-repeat"
-                  : "bg-[#66FFCC] bg-3-bg bg-top bg-cover bg-opacity-10 bg-no-repeat"
+                  ? "bg-[#FFE075] bg-2-bg bg-top bg-cover bg-opacity-10 bg-no-repeat xs:max-md:bg-right"
+                  : "bg-[#66FFCC] bg-3-bg bg-top bg-cover bg-opacity-10 bg-no-repeat xs:max-md:bg-center"
               } mx-auto rounded-lg flex flex-col items-center rounded-tl-none`}
             >
               <div>

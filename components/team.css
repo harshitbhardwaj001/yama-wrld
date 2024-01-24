@@ -337,8 +337,8 @@ body {
     }
 
     .container {
-        width: 280px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
     }
 
     .contentBx .card .imgBx1 {
@@ -347,7 +347,7 @@ body {
     }
 
     .container .icon .imgBx {
-        transform-origin: 170px;
+        transform-origin: 180px;
     }
 
     .content::before {

@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="mt-[120px]">
+      <motion.div variants={textVariant()} className="mt-[120px] xs:max-md:mt-[-180px]">
         <span className="hash-span" id="about">
           &nbsp;
         </span>
