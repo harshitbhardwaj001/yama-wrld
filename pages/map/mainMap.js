@@ -14,7 +14,7 @@ import coin from "../../assets/W.png";
 import Navbar from "../../components/NavbarCareer";
 
 //Test
-const mainMap = () => {
+const MainMap = () => {
   const [bPopup, setBpopup] = useState(0);
   const [visible, setVisible] = useState(false);
   useEffect(() => {}, []);
@@ -296,4 +296,4 @@ const mainMap = () => {
   );
 };
 
-export default mainMap;
+export default MainMap;
