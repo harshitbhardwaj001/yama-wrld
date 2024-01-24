@@ -3,7 +3,7 @@ import Head from "next/head";
 import card from "../../assets/card3.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Navbar from "../../components/NavbarCareer";
+import Navbar from "../../components/NavbarMap";
 // import "../styles/globals.css"
 import "./home.css";
 import LayoutEmpty from "../../components/LayoutEmpty";
@@ -15,8 +15,8 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setBpopup(true);
-    }, 2500)
-  }, [])
+    }, 2500);
+  }, []);
 
   return (
     <LayoutEmpty>

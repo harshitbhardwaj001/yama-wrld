@@ -14,7 +14,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`sm:px-16 px-6 top w-full flex items-center py-5 fixed bg-transparent z-20`}
+      className={`sm:px-16 px-6 top w-full flex items-center py-5 fixed z-20 bg-[#F9F9F9]`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -60,23 +60,27 @@ const Navbar = () => {
             style={{ width: "auto", height: "auto" }}
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-          <ul className="list-none flex justify-end items-start flex-col gap-4">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } font-poppins font-medium cursor-pointer text-[16px] `}
-              onClick={() => {
-                setToggle(!toggle);
-                setActive(link.title)
-              }}
-            >
-              <a href={`/${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } font-poppins font-medium cursor-pointer text-[16px] `}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={`/${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

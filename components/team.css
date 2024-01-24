@@ -9,6 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@font-face {
+    font-family: 'Grotesk';
+    src: url('../public/fonts/Anzeigen\ Grotesk\ D\ Regular.otf');
+}
+
 /* @font-face {
     font-family: 'Nullshock';
     src: url('../public/fonts/nulshock.otf');
@@ -23,7 +28,7 @@ h1, h2{
   } */
 
 body {
-    background: #060917;
+    background: #FAF9F6;
 }
 
 .main {
@@ -45,12 +50,15 @@ body {
 }
 
 .meet h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 6rem;
+    font-family: "Grotesk";
+    font-weight: 100;
+    color: #000;
 }
 
 .meet h1 span {
     color: #EE3124;
+    font-family: "Grotesk";
 }
 
 .container {
@@ -59,7 +67,7 @@ body {
     margin-bottom: 5rem;
     width: 600px;
     height: 600px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 50%;
 }
 
@@ -91,8 +99,8 @@ body {
     height: 80px;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #fff;
-    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    border: 1px solid #000;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #000;
     transform: rotate(calc(360deg/6 * var(--i)));
     transform-origin: 340px;
     z-index: 10;
@@ -137,7 +145,7 @@ body {
     inset: 60px;
     border: 4px solid transparent;
     border-left: 4px solid #0080C6;
-    border-right: 4px solid #fff;
+    border-right: 4px solid #000;
     border-radius: 50%;
     animation: animate_01 5s linear infinite;
     z-index: 1;
@@ -148,6 +156,7 @@ body {
     0% {
         rotate: 0deg;
     }
+
     100% {
         rotate: 360deg;
     }
@@ -159,7 +168,7 @@ body {
     inset: 120px;
     border: 4px solid transparent;
     border-left: 4px solid #EE3124;
-    border-right: 4px solid #fff;
+    border-right: 4px solid #000;
     border-radius: 50%;
     animation: animate_02 2.5s linear infinite;
     z-index: 1;
@@ -170,6 +179,7 @@ body {
     0% {
         rotate: 360deg;
     }
+
     100% {
         rotate: 0deg;
     }
@@ -228,7 +238,7 @@ body {
     position: relative;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     letter-spacing: 0.1em;
     line-height: 0.8em;
     text-transform: uppercase;
@@ -237,7 +247,7 @@ body {
 
 .contentBx .card .textBx h2 span {
     font-size: 0.5em;
-    color: #fff;
+    color: #000;
     font-weight: 500;
     letter-spacing: 0.1em;
 }
@@ -278,7 +288,7 @@ body {
         height: 400px;
     }
 
-    .container .icon .imgBx{
+    .container .icon .imgBx {
         transform-origin: 230px;
         width: 65px;
         height: 65px;
@@ -288,10 +298,12 @@ body {
         width: 100px;
         height: 100px;
     }
-    .content{
+
+    .content {
         inset: -20px;
     }
-    .content::after{
+
+    .content::after {
         display: none;
     }
 }
@@ -302,24 +314,28 @@ body {
         z-index: -5;
         top: -80px;
     }
+
     .meet h1 {
         font-size: 3rem;
     }
+
     .container {
         width: 320px;
         height: 320px;
     }
 
-    .container .icon .imgBx{
+    .container .icon .imgBx {
         width: 60px;
         height: 60px;
         transform-origin: 200px;
     }
 }
+
 @media screen and (max-width: 450px) {
     .meet h1 {
         font-size: 2rem;
     }
+
     .container {
         width: 280px;
         height: 280px;
@@ -330,22 +346,27 @@ body {
         height: 80px;
     }
 
-    .container .icon .imgBx{
+    .container .icon .imgBx {
         transform-origin: 170px;
     }
-    .content::before{
+
+    .content::before {
         display: none;
     }
+
     .contentBx .card .textBx h2 {
         font-size: 1.4rem;
     }
+
     .contentBx .card .textBx h2 span {
         font-size: 0.4em;
     }
+
     .contentBx .card .textBx .sci {
         margin-top: 5px;
     }
-    .contentBx .card .textBx .sci li a{
+
+    .contentBx .card .textBx .sci li a {
         width: 25px;
         height: 25px;
     }

@@ -8,6 +8,15 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        marquee: "marquee 25s linear infinite ",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
@@ -24,9 +33,13 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/herobg.png')",
+        "about-pattern": "url('/aboutbg.png')",
+        "map-bg": "url('/yamaMap.jpg')",
+        "1-bg": "url('/slide1.png')",
+        "2-bg": "url('/slide2.png')",
+        "3-bg": "url('/slide3.png')",
       },
     },
-  },  
+  },
   plugins: [],
-}
-
+};
