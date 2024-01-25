@@ -6,7 +6,7 @@ import "../../styles/globals.css";
 import bunker from "../../assets/U.png";
 import shield from "../../assets/enforcer.png";
 import Utext from "../../assets/UText.png";
-import AText from "../../assets/AText.png";
+import AText from "../../assets/Atext.png";
 import ArText from "../../assets/ArText.png";
 import EText from "../../assets/EText.png";
 import CText from "../../assets/CText.png";
